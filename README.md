@@ -24,7 +24,6 @@ NextJS application starter for rapid development of Flow based applications.
 - TailwindCSS [tailwindcss.com](https://tailwindcss.com)
 - Windstitch Component Variants [vinpac/windstitch](https://github.com/vinpac/windstitch)
 - Conditional Classes [package/clsx](https://www.npmjs.com/package/clsx)
-- Eosio Core [greymass/eosio-core](https://github.com/greymass/eosio-core)
 - Decimal.js [MikeMcl/decimal.js](https://github.com/MikeMcl/decimal.js)
 - GenQL GraphQL Query Composer [remorses/genql](https://github.com/remorses/genql)
 - Next Auth [nextauthjs/next-auth](https://github.com/nextauthjs/next-auth)
