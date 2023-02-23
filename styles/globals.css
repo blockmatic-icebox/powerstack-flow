@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body {
+  @apply font-urbanist;
+
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0) !important;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 230, 42, 0.6);
+  border-radius: 24px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 230, 42, 1);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+pre {
+  overflow-y: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important ;
+}
