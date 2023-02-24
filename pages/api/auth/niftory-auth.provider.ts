@@ -4,7 +4,7 @@ import { chainConfig } from '~/config/chain'
 import { clientEnv } from '~/config/client'
 import { serverEnv } from '~/config/server'
 
-console.log(clientEnv.niftory, serverEnv.niftorySecret)
+console.log(serverEnv.niftoryClientId, serverEnv.niftorySecret)
 
 console.log(`${chainConfig.flowTestnet.niftoryAuth}/.well-known/openid-configuration`)
 
@@ -17,7 +17,7 @@ export const niftoryAuthProvider: Provider = {
   authorization: {
     params: { scope: 'openid email profile offline_access', prompt: 'consent' },
   },
-  clientId: clientEnv.niftory.clientId,
+  clientId: serverEnv.niftoryClientId,
   clientSecret: serverEnv.niftorySecret,
   checks: ['pkce', 'state'],
   idToken: true,

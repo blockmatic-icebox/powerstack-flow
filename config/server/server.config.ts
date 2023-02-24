@@ -5,4 +5,5 @@ export const serverEnv = {
     secure: process.env.NODE_ENV === 'production',
   },
   niftorySecret: process.env.NEXT_NIFTORY_CLIENT_SECRET || '',
+  niftoryClientId: process.env.NEXT_NIFTORY_CLIENT_ID || '',
 }
