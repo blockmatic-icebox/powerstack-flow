@@ -17,7 +17,7 @@ export const niftoryAuthProvider: Provider = {
     params: { scope: 'openid email profile offline_access', prompt: 'consent' },
   },
   clientId: clientEnv.niftory.clientId,
-  // clientSecret: serverEnv.niftorySecret,
+  clientSecret: serverEnv.niftorySecret,
   checks: ['pkce', 'state'],
   idToken: true,
   profile(profile) {
