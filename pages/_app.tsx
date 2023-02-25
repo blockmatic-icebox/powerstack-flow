@@ -3,12 +3,12 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useEffect } from 'react'
 
+import { clientEnv } from '~/config/client'
 import { GlobalContextProvider } from '~/context/global.context'
 import { RootLayout } from '~/layouts/root'
 import '~/public/assets/css/icons.min.css'
 import '~/styles/globals.css'
 
-import { clientEnv } from '../../flow-marketplace/config/client'
 import '../config/flow/config'
 
 export default function MyApp({ Component, pageProps }: AppProps<any>) {
