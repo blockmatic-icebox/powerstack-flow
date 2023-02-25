@@ -4,6 +4,6 @@ export const serverEnv = {
     cookieName: process.env.IRON_SESSION_PASSWORD || 'cookie-session',
     secure: process.env.NODE_ENV === 'production',
   },
-  niftorySecret: process.env.NEXT_NIFTORY_CLIENT_SECRET || '',
-  niftoryClientId: process.env.NEXT_NIFTORY_CLIENT_ID || '',
+  niftorySecret: process.env.NIFTORY_CLIENT_SECRET || '',
+  niftoryClientId: process.env.NIFTORY_CLIENT_ID || '',
 }

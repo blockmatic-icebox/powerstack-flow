@@ -13,7 +13,7 @@ export const chainConfig = {
   flowTestnet: {
     chainNamespace: 'flow',
     grpc: '',
-    niftory: 'https://graqphql.api.staging.niftory.com',
+    niftory: 'https://graphql.api.staging.niftory.com',
     niftoryAuth: 'https://auth.staging.niftory.com',
     blockExplorer: 'https://testnet.flowscan.org/',
     chainId: '',

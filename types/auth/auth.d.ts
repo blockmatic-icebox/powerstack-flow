@@ -12,4 +12,11 @@ declare module 'next-auth' {
       error: string
     } & DefaultSession['user']
   }
+
+  /** Returned by the `jwt` callback and `getToken`, when using JWT sessions */
+  interface JWT {
+    /** OpenID ID Token */
+    idToken?: string
+    authTokenExpiresAt: string
+  }
 }
