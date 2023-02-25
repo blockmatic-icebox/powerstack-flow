@@ -17,10 +17,12 @@ export const authOptions: NextAuthOptions = {
     },
     session: async ({ session, token }) => {
       console.log('session callback', { session, token })
-      // session.userId = token.sub
-      // session.clientId = token.aud
-      // session.authToken = token.authToken
-      // session.error = token.error
+      session.user = {
+        userId: token.sub || '',
+        clientId: token.aud?.toString() || '',
+        jwt: token.authToken?.toString() || '',
+        error: token.error?.toString() || '',
+      }
 
       return session
     },

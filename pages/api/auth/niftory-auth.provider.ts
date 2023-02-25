@@ -1,12 +1,9 @@
 import { Provider } from 'next-auth/providers'
 
 import { chainConfig } from '~/config/chain'
-import { clientEnv } from '~/config/client'
 import { serverEnv } from '~/config/server'
 
 console.log(serverEnv.niftoryClientId, serverEnv.niftorySecret)
-
-console.log(`${chainConfig.flowTestnet.niftoryAuth}/.well-known/openid-configuration`)
 
 export const niftoryAuthProvider: Provider = {
   id: 'niftory',
